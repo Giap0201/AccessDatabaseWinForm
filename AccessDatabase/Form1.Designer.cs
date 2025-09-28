@@ -59,6 +59,7 @@
             dataGridView1.Size = new Size(940, 517);
             dataGridView1.TabIndex = 0;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick_1;
+            dataGridView1.SelectionChanged += dataGridView1_SelectionChanged_1;
             // 
             // labFirstName
             // 

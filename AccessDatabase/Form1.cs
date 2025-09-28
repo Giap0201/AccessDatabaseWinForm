@@ -59,29 +59,6 @@ namespace AccessDatabase
             }
         }
 
-        // Sự kiện khi chọn một dòng trong DataGridView
-        private void dataGridView1_SelectionChanged(object sender, EventArgs e)
-        {
-            if (dataGridView1.SelectedRows.Count > 0)
-            {
-                try
-                {
-                    DataGridViewRow row = dataGridView1.SelectedRows[0];
-                    txtId.Text = row.Cells["ID"].Value?.ToString() ?? "";
-                    txtFirstName.Text = row.Cells["FirstName"].Value?.ToString() ?? "";
-                    txtLastName.Text = row.Cells["LastName"].Value?.ToString() ?? "";
-                    txtAddress.Text = row.Cells["Address"].Value?.ToString() ?? "";
-                    txtClass.Text = row.Cells["Class"].Value?.ToString() ?? "";
-                    txtAge.Text = row.Cells["Age"].Value?.ToString() ?? "";
-                    txtEmail.Text = row.Cells["Email"].Value?.ToString() ?? "";
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Lỗi khi chọn dòng: " + ex.Message);
-                }
-            }
-        }
-
         // Hàm xóa các ô nhập liệu
         private void ClearInputs()
         {
@@ -229,6 +206,30 @@ namespace AccessDatabase
                 txtClass.Text = row.Cells["Class"].Value?.ToString() ?? "";
                 txtAge.Text = row.Cells["Age"].Value?.ToString() ?? "";
                 txtEmail.Text = row.Cells["Email"].Value?.ToString() ?? "";
+            }
+        }
+
+        // Sự kiện khi chọn một dòng trong DataGridView
+
+        private void dataGridView1_SelectionChanged_1(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                try
+                {
+                    DataGridViewRow row = dataGridView1.SelectedRows[0];
+                    txtId.Text = row.Cells["ID"].Value?.ToString() ?? "";
+                    txtFirstName.Text = row.Cells["FirstName"].Value?.ToString() ?? "";
+                    txtLastName.Text = row.Cells["LastName"].Value?.ToString() ?? "";
+                    txtAddress.Text = row.Cells["Address"].Value?.ToString() ?? "";
+                    txtClass.Text = row.Cells["Class"].Value?.ToString() ?? "";
+                    txtAge.Text = row.Cells["Age"].Value?.ToString() ?? "";
+                    txtEmail.Text = row.Cells["Email"].Value?.ToString() ?? "";
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi khi chọn dòng: " + ex.Message);
+                }
             }
         }
     }
