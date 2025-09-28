@@ -46,6 +46,7 @@
             btnDelete = new Button();
             labId = new Label();
             txtId = new TextBox();
+            btnResert = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -53,10 +54,10 @@
             // 
             dataGridView1.BackgroundColor = SystemColors.ActiveCaption;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(389, 53);
+            dataGridView1.Location = new Point(468, 39);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(940, 517);
+            dataGridView1.Size = new Size(921, 517);
             dataGridView1.TabIndex = 0;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick_1;
             dataGridView1.SelectionChanged += dataGridView1_SelectionChanged_1;
@@ -65,7 +66,7 @@
             // 
             labFirstName.AutoSize = true;
             labFirstName.BackColor = SystemColors.ButtonFace;
-            labFirstName.Location = new Point(69, 123);
+            labFirstName.Location = new Point(68, 140);
             labFirstName.Name = "labFirstName";
             labFirstName.Size = new Size(76, 20);
             labFirstName.TabIndex = 1;
@@ -95,7 +96,7 @@
             // 
             labEmail.AutoSize = true;
             labEmail.BackColor = SystemColors.ButtonFace;
-            labEmail.Location = new Point(69, 322);
+            labEmail.Location = new Point(69, 302);
             labEmail.Name = "labEmail";
             labEmail.Size = new Size(46, 20);
             labEmail.TabIndex = 4;
@@ -144,28 +145,28 @@
             // 
             // txtEmail
             // 
-            txtEmail.Location = new Point(217, 317);
+            txtEmail.Location = new Point(215, 299);
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(125, 27);
             txtEmail.TabIndex = 10;
             // 
             // txtAddress
             // 
-            txtAddress.Location = new Point(217, 356);
+            txtAddress.Location = new Point(217, 353);
             txtAddress.Name = "txtAddress";
             txtAddress.Size = new Size(125, 27);
             txtAddress.TabIndex = 11;
             // 
             // txtAge
             // 
-            txtAge.Location = new Point(217, 412);
+            txtAge.Location = new Point(217, 398);
             txtAge.Name = "txtAge";
             txtAge.Size = new Size(125, 27);
             txtAge.TabIndex = 12;
             // 
             // btnAdd
             // 
-            btnAdd.Location = new Point(51, 495);
+            btnAdd.Location = new Point(37, 495);
             btnAdd.Name = "btnAdd";
             btnAdd.Size = new Size(94, 29);
             btnAdd.TabIndex = 13;
@@ -175,7 +176,7 @@
             // 
             // btnUpdate
             // 
-            btnUpdate.Location = new Point(151, 495);
+            btnUpdate.Location = new Point(137, 495);
             btnUpdate.Name = "btnUpdate";
             btnUpdate.Size = new Size(94, 29);
             btnUpdate.TabIndex = 14;
@@ -185,7 +186,7 @@
             // 
             // btnDelete
             // 
-            btnDelete.Location = new Point(265, 495);
+            btnDelete.Location = new Point(237, 495);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(94, 29);
             btnDelete.TabIndex = 15;
@@ -205,17 +206,28 @@
             // 
             // txtId
             // 
-            txtId.Location = new Point(215, 72);
+            txtId.Location = new Point(217, 79);
             txtId.Name = "txtId";
             txtId.Size = new Size(125, 27);
             txtId.TabIndex = 17;
+            // 
+            // btnResert
+            // 
+            btnResert.Location = new Point(337, 495);
+            btnResert.Name = "btnResert";
+            btnResert.Size = new Size(94, 29);
+            btnResert.TabIndex = 18;
+            btnResert.Text = "Resert";
+            btnResert.UseVisualStyleBackColor = true;
+            btnResert.Click += button1_Click;
             // 
             // Form1
             // 
             AcceptButton = btnAdd;
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1386, 693);
+            ClientSize = new Size(1421, 693);
+            Controls.Add(btnResert);
             Controls.Add(txtId);
             Controls.Add(labId);
             Controls.Add(btnDelete);
@@ -262,5 +274,6 @@
         private Button btnDelete;
         private Label labId;
         private TextBox txtId;
+        private Button btnResert;
     }
 }
