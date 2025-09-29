@@ -45,8 +45,8 @@ namespace AccessDatabase
                     // Đảm bảo hiển thị tất cả cột
                     dataGridView1.AutoGenerateColumns = true;
                     dataGridView1.Columns["ID"].HeaderText = "ID";
-                    dataGridView1.Columns["FirstName"].HeaderText = "Tên";
-                    dataGridView1.Columns["LastName"].HeaderText = "Họ";
+                    dataGridView1.Columns["FirstName"].HeaderText = "Họ";
+                    dataGridView1.Columns["LastName"].HeaderText = "Tên";
                     dataGridView1.Columns["Address"].HeaderText = "Địa chỉ";
                     dataGridView1.Columns["Class"].HeaderText = "Lớp";
                     dataGridView1.Columns["Age"].HeaderText = "Tuổi";
@@ -194,20 +194,20 @@ namespace AccessDatabase
         }
 
         // Sự kiện click ô trong DataGridView (chỉ chọn dòng, không xóa)
-        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex >= 0)
-            {
-                DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
-                txtId.Text = row.Cells["ID"].Value?.ToString() ?? "";
-                txtFirstName.Text = row.Cells["FirstName"].Value?.ToString() ?? "";
-                txtLastName.Text = row.Cells["LastName"].Value?.ToString() ?? "";
-                txtAddress.Text = row.Cells["Address"].Value?.ToString() ?? "";
-                txtClass.Text = row.Cells["Class"].Value?.ToString() ?? "";
-                txtAge.Text = row.Cells["Age"].Value?.ToString() ?? "";
-                txtEmail.Text = row.Cells["Email"].Value?.ToString() ?? "";
-            }
-        }
+        //private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        //{
+        //    if (e.RowIndex >= 0)
+        //    {
+        //        DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
+        //        txtId.Text = row.Cells["ID"].Value?.ToString() ?? "";
+        //        txtFirstName.Text = row.Cells["FirstName"].Value?.ToString() ?? "";
+        //        txtLastName.Text = row.Cells["LastName"].Value?.ToString() ?? "";
+        //        txtAddress.Text = row.Cells["Address"].Value?.ToString() ?? "";
+        //        txtClass.Text = row.Cells["Class"].Value?.ToString() ?? "";
+        //        txtAge.Text = row.Cells["Age"].Value?.ToString() ?? "";
+        //        txtEmail.Text = row.Cells["Email"].Value?.ToString() ?? "";
+        //    }
+        //}
 
         // Sự kiện khi chọn một dòng trong DataGridView
 

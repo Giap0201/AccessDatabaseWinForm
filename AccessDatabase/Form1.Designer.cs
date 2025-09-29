@@ -59,14 +59,13 @@
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.Size = new Size(921, 517);
             dataGridView1.TabIndex = 0;
-            dataGridView1.CellContentClick += dataGridView1_CellContentClick_1;
             dataGridView1.SelectionChanged += dataGridView1_SelectionChanged_1;
             // 
             // labFirstName
             // 
             labFirstName.AutoSize = true;
             labFirstName.BackColor = SystemColors.ButtonFace;
-            labFirstName.Location = new Point(68, 140);
+            labFirstName.Location = new Point(68, 133);
             labFirstName.Name = "labFirstName";
             labFirstName.Size = new Size(76, 20);
             labFirstName.TabIndex = 1;
@@ -86,7 +85,7 @@
             // 
             labClass.AutoSize = true;
             labClass.BackColor = SystemColors.ButtonFace;
-            labClass.Location = new Point(69, 252);
+            labClass.Location = new Point(73, 242);
             labClass.Name = "labClass";
             labClass.Size = new Size(42, 20);
             labClass.TabIndex = 3;
@@ -96,7 +95,7 @@
             // 
             labEmail.AutoSize = true;
             labEmail.BackColor = SystemColors.ButtonFace;
-            labEmail.Location = new Point(69, 302);
+            labEmail.Location = new Point(69, 295);
             labEmail.Name = "labEmail";
             labEmail.Size = new Size(46, 20);
             labEmail.TabIndex = 4;
@@ -106,7 +105,7 @@
             // 
             labAddress.AutoSize = true;
             labAddress.BackColor = SystemColors.ButtonFace;
-            labAddress.Location = new Point(69, 356);
+            labAddress.Location = new Point(69, 349);
             labAddress.Name = "labAddress";
             labAddress.Size = new Size(62, 20);
             labAddress.TabIndex = 5;
@@ -116,7 +115,7 @@
             // 
             labAge.AutoSize = true;
             labAge.BackColor = SystemColors.ButtonFace;
-            labAge.Location = new Point(69, 401);
+            labAge.Location = new Point(69, 398);
             labAge.Name = "labAge";
             labAge.Size = new Size(36, 20);
             labAge.TabIndex = 6;
@@ -124,7 +123,7 @@
             // 
             // txtFirstName
             // 
-            txtFirstName.Location = new Point(217, 123);
+            txtFirstName.Location = new Point(217, 133);
             txtFirstName.Name = "txtFirstName";
             txtFirstName.Size = new Size(125, 27);
             txtFirstName.TabIndex = 7;
@@ -145,14 +144,14 @@
             // 
             // txtEmail
             // 
-            txtEmail.Location = new Point(215, 299);
+            txtEmail.Location = new Point(217, 295);
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(125, 27);
             txtEmail.TabIndex = 10;
             // 
             // txtAddress
             // 
-            txtAddress.Location = new Point(217, 353);
+            txtAddress.Location = new Point(217, 349);
             txtAddress.Name = "txtAddress";
             txtAddress.Size = new Size(125, 27);
             txtAddress.TabIndex = 11;
@@ -198,7 +197,7 @@
             // 
             labId.AutoSize = true;
             labId.BackColor = SystemColors.ButtonFace;
-            labId.Location = new Point(78, 86);
+            labId.Location = new Point(73, 79);
             labId.Name = "labId";
             labId.Size = new Size(22, 20);
             labId.TabIndex = 16;
